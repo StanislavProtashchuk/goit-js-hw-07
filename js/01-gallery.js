@@ -40,12 +40,12 @@ function onClickEvent(e) {
 
     instance.show();
 
-    window.addEventListener('keydown', escapeClick);
+    galleryContainer.addEventListener('keydown', escapeClick);
 
     function escapeClick(e) {
         if (e.key === 'Escape') {
             instance.close();
-            window.removeEventListener('keydown', escapeClick);
+            galleryContainer.removeEventListener('keydown', escapeClick);            
         }
         console.log(e.key);
     }
